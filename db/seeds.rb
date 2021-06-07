@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Annoucement.destroy_all
 
+
 5.times do 
   User.create(
     email: Faker::Internet.email,
@@ -24,6 +25,6 @@ end
     price: rand(250..600),
     size: rand(20..100),
     typeHome: "maison",
-    user_id: 2
+    user_id: 13
   )
 end
