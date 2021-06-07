@@ -3,8 +3,7 @@ class MembersController < ApplicationController
   
     def index
       @user = User.all
-      @current_user = current_user
-      render json: { users: @user, current_user: @current_user }
+      render json: { users: @user}
     end
     
     def destroy
