@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Annoucement.destroy_all
 
 5.times do 
   User.create(
@@ -16,7 +17,7 @@ end
 20.times do 
   Annoucement.create(
     title: Faker::Lorem.characters(number: 5),
-    description: Faker::Lorem.words(number: 4),
+    description: Faker::Lorem.paragraph(sentence_count: 5),
     adress: Faker::Address.street_address,
     zip_code: Faker::Address.zip_code, 
     city: Faker::Address.city,
