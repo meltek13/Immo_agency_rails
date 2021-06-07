@@ -16,7 +16,7 @@ class AnnoucementsController < ApplicationController
   # POST /annoucements
   def create
     @annoucement = Annoucement.new(annoucement_params)
-    # @annoucement.user_id = current_user.id
+    @annoucement.user_id = current_user.id
 
     if @annoucement.save
       render json: @annoucement, status: :created, location: @annoucement
