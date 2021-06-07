@@ -5,12 +5,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   
     def respond_with(resource, _opts = {})
       register_success && return if resource.persisted?
-      
       register_failed
     end
   
     def register_success   
-        render json: {user: resource}  
+        render json: {user: resource, message:"succesfully register"}  
     end
   
     def register_failed
