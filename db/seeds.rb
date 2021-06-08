@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Annoucement.destroy_all
 
+Type = ["Maison", "Appartement"]
 
 5.times do 
   User.create(
@@ -24,7 +25,7 @@ end
     city: Faker::Address.city,
     price: rand(250..600),
     size: rand(20..100),
-    typeHome: "maison",
+    typeHome: Type.sample,
     user_id: 13
   )
 end
