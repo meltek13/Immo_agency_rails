@@ -1,6 +1,7 @@
 class Annoucement < ApplicationRecord
   belongs_to :user
-
+  has_one_attached :featured_image
+  
   validates :title, presence: true
   validates :description, presence: true
   validates :adress, presence: true

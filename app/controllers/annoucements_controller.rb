@@ -15,14 +15,14 @@ class AnnoucementsController < ApplicationController
 
   # POST /annoucements
   def create
-    @annoucement = Annoucement.new(annoucement_params)
+    @annoucement = Annoucement.create(annoucement_params)
     # @annoucement.user_id = current_user.id
 
-    if @annoucement.save
-      render json: @annoucement, status: :created, location: @annoucement
-    else
-      render json: @annoucement.errors, status: :unprocessable_entity
-    end
+    #if @annoucement.save
+    #  render json: @annoucement, status: :created, location: @annoucement
+    #else
+    #  render json: @annoucement.errors, status: :unprocessable_entity
+    #end
   end
 
   # PATCH/PUT /annoucements/1
@@ -47,6 +47,8 @@ class AnnoucementsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def annoucement_params
-      params.require(:annoucement).permit(:user_id ,:typeHome, :description, :title, :adress, :zip_code, :city, :price, :size, :type)
+      params.permit(:user_id ,:typeHome, :description, :title, :adress, :zip_code, :city, :price, :size, :featured_image)
     end
+
+
 end

@@ -12,6 +12,7 @@ class CreateAnnoucements < ActiveRecord::Migration[6.1]
       t.string :typeHome
       t.belongs_to :user
 
+
       t.timestamps
     end
   end
