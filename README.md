@@ -1,24 +1,7 @@
-# README
+# **Marketplace : Immo **
+![](https://www.wizaplace.com/wp-content/uploads/2018/03/Presentation-marketplace.jpg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lien appli React : https://immo-react-front.herokuapp.com/
+Lien API Rails : https://immo-react.herokuapp.com/annoucements
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+By : @Melvin REGNAULT - @Théo CAZENAVE-COUPET - @Boris N'KUAKO - @Frédéric SEGUIER
